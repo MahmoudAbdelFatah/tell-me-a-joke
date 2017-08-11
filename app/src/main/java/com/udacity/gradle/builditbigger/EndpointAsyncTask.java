@@ -8,7 +8,6 @@ import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
-import com.udacity.gradle.builditbigger.free.MainActivityFragment;
 
 import java.io.IOException;
 
@@ -16,13 +15,13 @@ import java.io.IOException;
  * Created by Mahmoud on 8/11/2017.
  */
 
-public class EndpointAsyncTask extends AsyncTask<MainActivityFragment, Void, String> {
+public class EndpointAsyncTask extends AsyncTask<com.udacity.gradle.builditbigger.MainActivityFragment, Void, String> {
     private static MyApi myApiService = null;
     private Context context;
-    private MainActivityFragment mainActivityFragment;
+    private com.udacity.gradle.builditbigger.MainActivityFragment mainActivityFragment;
 
     @Override
-    protected String doInBackground(MainActivityFragment... params) {
+    protected String doInBackground(com.udacity.gradle.builditbigger.MainActivityFragment... params) {
         if(myApiService == null) {  // Only do this once
             MyApi.Builder builder = new
                     MyApi.Builder(AndroidHttp.newCompatibleTransport(),

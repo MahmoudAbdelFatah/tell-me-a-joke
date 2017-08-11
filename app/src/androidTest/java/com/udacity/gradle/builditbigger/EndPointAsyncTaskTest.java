@@ -2,8 +2,6 @@ package com.udacity.gradle.builditbigger;
 
 import android.support.test.runner.AndroidJUnit4;
 
-import com.udacity.gradle.builditbigger.free.MainActivityFragment;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -16,7 +14,7 @@ import static org.junit.Assert.assertTrue;
 public class EndPointAsyncTaskTest {
     @Test
     public void testDoInBackground() throws Exception {
-        MainActivityFragment fragment = new MainActivityFragment();
+        com.udacity.gradle.builditbigger.MainActivityFragment fragment = new com.udacity.gradle.builditbigger.MainActivityFragment();
         fragment.testFlag = true;
         new EndpointAsyncTask().execute(fragment);
         Thread.sleep(5000);

@@ -1,4 +1,4 @@
-package com.udacity.gradle.builditbigger.free;
+package com.udacity.gradle.builditbigger;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,8 +16,6 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.doubleclick.PublisherAdRequest;
 import com.google.android.gms.ads.doubleclick.PublisherInterstitialAd;
-import com.udacity.gradle.builditbigger.EndpointAsyncTask;
-import com.udacity.gradle.builditbigger.R;
 
 
 /**
